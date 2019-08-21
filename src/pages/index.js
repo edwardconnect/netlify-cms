@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import CMS from 'netlify-cms'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+CMS.registerPreviewTemplate('my-template', MyTemplate)
 
 const IndexPage = () => (
   <Layout>
